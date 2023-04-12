@@ -1,7 +1,7 @@
 body {
     background: #1d1f21 none;
     color: #c5c8c6;
-    font-family: arial,helvetica,sans-serif;
+    font-family: arial, helvetica, sans-serif;
     font-size: 10pt;
     margin-left: 0;
     margin-right: 0;
@@ -9,17 +9,32 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 }
+
 form#delform {
     max-width: 180vmin !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
-hr#op, #ctrl-top, .navLinks.desktop {
+
+div.post.reply.preview.inlined {
+    margin-bottom: 0.5rem;
+    border: 1px solid #6e6e6e !important;
+}
+
+hr#op,
+.navLinks.desktop {
     clear: none !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+div#ctrl-top {
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -28,6 +43,7 @@ hr#op, #ctrl-top, .navLinks.desktop {
     margin-left: 5px;
     cursor: default;
 }
+
 div.closed {
     font-size: large;
     text-align: center;
@@ -36,113 +52,242 @@ div.closed {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-#threadWatcher, #post-preview {
+
+#threadWatcher,
+#post-preview {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .yotsuba_b_new #watchList li:first-child {
     border-top: none;
 }
-a, a:visited, a:hover, div#boardNavDesktop a, .quoteLink, .quotelink, .deadlink, .pageJump a, a.replylink, div#absbot a, a.replylink:not(:hover), div#absbot a:not(:hover), .burichan_new .backlink a, .yotsuba_b_new .backlink a {
+
+div.reply input {
+    display: none;
+}
+
+a,
+a:visited,
+a:hover,
+div#boardNavDesktop a,
+.quoteLink,
+.quotelink,
+.deadlink,
+.pageJump a,
+a.replylink,
+div#absbot a,
+a.replylink:not(:hover),
+div#absbot a:not(:hover),
+.burichan_new .backlink a,
+.yotsuba_b_new .backlink a {
     color: #8596bb;
     text-decoration: none;
 }
-div.post div.postInfo span.postNum a:hover, .posteruid .hand:hover {
-    color: #cccccc!important;
+
+div.post div.postInfo span.postNum a:hover,
+.posteruid .hand:hover {
+    color: #cccccc !important;
 }
+
+div.backlink {
+    font-size: x-small !important;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
 .extButton {
     cursor: pointer;
     margin-bottom: -4px;
     filter: contrast(1.5) brightness(.85) saturate(0.7);
 }
-input[type=text], input[type=password], table.postForm>tbody textarea, #recaptcha_response_field {
+
+input[type=text],
+input[type=password],
+table.postForm>tbody textarea,
+#recaptcha_response_field {
     margin: 0;
     margin-right: 2px;
     padding: 2px 4px 3px;
     border: 1px solid #707070;
     outline: none;
-    font-family: arial,helvetica,sans-serif;
+    font-family: arial, helvetica, sans-serif;
     font-size: 10pt;
     background: #282a2e;
 }
-div.boardBanner, .globalMessage {
+
+div.boardBanner,
+.globalMessage {
     color: inherit;
 }
+
 #quickReply textarea {
     background: #282a2e;
     color: #c5c8c6;
     min-width: 300px;
     float: none;
 }
-input[type=text]:focus, input[type=password]:focus, input:not([type]):focus, textarea:focus {
-    border: 1px solid #77cc92!important;
+
+input[type=text]:focus,
+input[type=password]:focus,
+input:not([type]):focus,
+textarea:focus {
+    border: 1px solid #77cc92 !important;
 }
+
 #qrFile {
     width: 230px;
     margin-right: 5px;
     color: #707070;
 }
-div.reply, .preview, #threadWatcher, #post-preview {
+
+div.reply,
+.preview,
+#threadWatcher,
+#post-preview {
     background-color: #282a2e !important;
     border: 1px solid #282a2e !important;
     display: table !important;
-    padding: 6px !important;
-    border-radius: 11px !important;
+    padding: 0.5rem !important;
+    border-radius: 8px !important;
 }
-.reply:target, .reply.highlight {
-    background: #232d26!important;
-    border: 2px solid #3da95b!important;
-    padding: 2px;
+
+.reply:target,
+.reply.highlight {
+    background: #232d26 !important;
+    border: 1px solid #3da95b !important;
+    padding: 8px !important;
 }
-#quote-preview, #yt-preview {
+
+#quote-preview,
+#yt-preview {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid #808080 !important;
 }
+
 div.post div.file .fileThumb img {
     border: none;
     float: left;
     border-radius: 8px;
 }
+
 #image-hover {
     display: flex;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 blockquote>span.quote {
     color: #95c976;
 }
+
 div.post div.postInfo span.nameBlock span.name {
     color: #c9c48a;
     font-weight: 700;
 }
-div.fileText, div.postInfo, span.dateTime, span.postNum {
-    color: #8d8d8e !important
+
+div.postInfo,
+span.dateTime,
+span.postNum,
+span.summary {
+    font-size: small;
 }
+
+.fileText {
+    font-weight: bold;
+    font-size: smaller;
+    margin-bottom: 0.3rem;
+}
+
 div#boardNavDesktop {
     color: #616161;
 }
+
 div.post div.postInfo span.subject {
     color: #ef7eff;
     font-weight: 700;
 }
 
-hr, div.adl, div.sideArrows, div.middlead.center {
-    display:none;
+hr,
+div.adl,
+div.sideArrows,
+div.middlead.center {
+    display: none;
 }
 
 /* Blockquote this rule if you already hide modposts manually.
 This rule will block thread numbers regardless of board.
 It may not affect your usage. */
-#t124205675, #t259848258, #t1990691, #t1436774, #t76759434, #t6226033, #t3743858, #t4551312, #t23385784, #t27429060, #t22251386, #t3715226, #t2359499, #t12370429, #t9112225, #t521528, #t3145651, #t1, #t6775606, #t2, #t739, #t2172921, #t6872254, #t1579290, #t23675577, #t37842102, #t1654916, #t3279425, #t886269, #t2565057, #t561987, #t133810, #t4884770, #t45310862, #t7196511, #t670504, #t6310205, #t70348194, #t248316, #t433747, #t243077, #t2143756, #t27939, #t153692319, #t153692319, #t17557914, #t48186754, #t6, #t38571, #t570368, #t5942502, #t17318579, #t15396072, #t49273753, #t1973636, #t957536, #t21676943 {
-    display:none;
+#t124205675,
+#t259848258,
+#t1990691,
+#t1436774,
+#t76759434,
+#t6226033,
+#t3743858,
+#t4551312,
+#t23385784,
+#t27429060,
+#t22251386,
+#t3715226,
+#t2359499,
+#t12370429,
+#t9112225,
+#t521528,
+#t3145651,
+#t1,
+#t6775606,
+#t2,
+#t739,
+#t2172921,
+#t6872254,
+#t1579290,
+#t23675577,
+#t37842102,
+#t1654916,
+#t3279425,
+#t886269,
+#t2565057,
+#t561987,
+#t133810,
+#t4884770,
+#t45310862,
+#t7196511,
+#t670504,
+#t6310205,
+#t70348194,
+#t248316,
+#t433747,
+#t243077,
+#t2143756,
+#t27939,
+#t153692319,
+#t153692319,
+#t17557914,
+#t48186754,
+#t6,
+#t38571,
+#t570368,
+#t5942502,
+#t17318579,
+#t15396072,
+#t49273753,
+#t1973636,
+#t957536,
+#t21676943 {
+    display: none;
 }
 
 div.thread {
-    margin: 8px;
+    padding: 12px;
     clear: both;
 }
+
 div.post blockquote.postMessage {
     display: block;
     margin-left: 2em;
 }
+
 table.postForm>tbody>tr>td:first-child {
     font-weight: 700;
     border: 1px solid #707070;
@@ -151,6 +296,7 @@ table.postForm>tbody>tr>td:first-child {
     background-color: inherit;
     color: inherit;
 }
+
 #t-root {
     overflow: hidden;
     box-sizing: border-box;
@@ -159,12 +305,14 @@ table.postForm>tbody>tr>td:first-child {
     margin: 2px 0;
     width: 300px;
 }
+
 #quickReply {
     display: block;
     position: fixed;
     font-size: 10pt;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .postblock {
     background-color: #282a2e;
     color: #c5c8c6;
@@ -173,9 +321,10 @@ table.postForm>tbody>tr>td:first-child {
     padding: 0 5px;
     font-size: 10pt;
 }
+
 div#absbot {
     text-align: center;
-    font-size: x-small!important;
+    font-size: x-small !important;
     padding-bottom: 4px;
     padding-top: 10px;
     color: inherit;
