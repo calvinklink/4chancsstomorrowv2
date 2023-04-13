@@ -76,6 +76,21 @@ div.closed {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+div.postInfo.desktop a.quotelink {
+    background-color: #8596bb;
+    border-radius: 999rem;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    white-space: nowrap;
+    padding: 0px 5px;
+    color: #1d1f21 !important;
+}
+
+.backlink span {
+    padding-right: 1px;
+}
+
 .yotsuba_b_new #watchList li:first-child {
     border-top: none;
 }
