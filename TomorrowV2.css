@@ -138,6 +138,15 @@ table.postForm>tbody textarea,
     padding: 4px;
 }
 
+#quickReply input[type="text"],
+#quickReply textarea,
+#quickReply #recaptcha_response_field {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10pt;
+    outline: medium none;
+    width: 300px;
+}
+
 div.boardBanner,
 .globalMessage {
     color: inherit;
