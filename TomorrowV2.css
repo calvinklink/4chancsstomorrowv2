@@ -96,6 +96,12 @@ div.backlink {
     padding-right: 5px;
 }
 
+#qrForm > div:nth-child(4) {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    clear: both;
+}
+
 .extButton {
     cursor: pointer;
     margin-bottom: -4px;
@@ -106,14 +112,14 @@ input[type=text],
 input[type=password],
 table.postForm>tbody textarea,
 #recaptcha_response_field {
-    margin: 0;
-    margin-right: 2px;
-    padding: 2px 4px 3px;
-    border: 1px solid #707070;
-    outline: none;
-    font-family: arial, helvetica, sans-serif;
+    font-family: arial,helvetica,sans-serif;
     font-size: 10pt;
-    background: #282a2e;
+    min-width: 300px;
+    margin: 2px;
+    border: 1px;
+    background-color: #0000004d;
+    border-radius: 4px;
+    padding: 4px;
 }
 
 div.boardBanner,
@@ -138,7 +144,7 @@ textarea:focus {
 #qrFile {
     width: 230px;
     margin-right: 5px;
-    color: #707070;
+    color: #ffffff;
 }
 
 div.reply,
