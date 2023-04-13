@@ -111,7 +111,8 @@ div.backlink {
 input[type=text],
 input[type=password],
 table.postForm>tbody textarea,
-#recaptcha_response_field {
+#recaptcha_response_field,
+#quickReply textarea {
     font-family: arial,helvetica,sans-serif;
     font-size: 10pt;
     min-width: 300px;
