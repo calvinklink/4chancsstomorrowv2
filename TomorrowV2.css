@@ -11,9 +11,27 @@ body {
 }
 
 form#delform {
-    max-width: 180vmin !important;
+    max-width: 180vmin !important; /* change to your liking */
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+a,
+a:visited,
+a:hover,
+div#boardNavDesktop a,
+.quoteLink,
+.quotelink,
+.deadlink,
+.pageJump a,
+a.replylink,
+div#absbot a,
+a.replylink:not(:hover),
+div#absbot a:not(:hover),
+.burichan_new .backlink a,
+.yotsuba_b_new .backlink a {
+    color: #8596bb !important;
+    text-decoration: none;
 }
 
 div.post.reply.preview.inlined {
@@ -62,26 +80,8 @@ div.closed {
     border-top: none;
 }
 
-div.reply input {
+.postInfo input[type="checkbox"] {
     display: none;
-}
-
-a,
-a:visited,
-a:hover,
-div#boardNavDesktop a,
-.quoteLink,
-.quotelink,
-.deadlink,
-.pageJump a,
-a.replylink,
-div#absbot a,
-a.replylink:not(:hover),
-div#absbot a:not(:hover),
-.burichan_new .backlink a,
-.yotsuba_b_new .backlink a {
-    color: #8596bb;
-    text-decoration: none;
 }
 
 div.post div.postInfo span.postNum a:hover,
@@ -144,25 +144,26 @@ textarea:focus {
 div.reply,
 .preview,
 #threadWatcher,
-#post-preview {
+#post-preview,
+.reply:target,
+.reply.highlight {
     background-color: #282a2e !important;
     border: 1px solid #282a2e !important;
     display: table !important;
-    padding: 0.5rem !important;
+    padding: 0.5rem 0.8rem !important;
     border-radius: 8px !important;
 }
 
 .reply:target,
 .reply.highlight {
-    background: #232d26 !important;
-    border: 1px solid #3da95b !important;
-    padding: 8px !important;
+    border: 1px solid #808080 !important;
 }
 
 #quote-preview,
-#yt-preview {
+#yt-preview,
+.yotsuba_b_new #quote-preview.highlight {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 2px solid #808080 !important;
+    border: 1px solid #808080 !important;
 }
 
 div.post div.file .fileThumb img {
