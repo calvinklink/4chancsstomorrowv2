@@ -11,7 +11,8 @@ body {
 }
 
 form#delform {
-    max-width: 180vmin !important; /* change to your liking */
+    max-width: 180vmin !important;
+    /* change to your liking */
     margin-left: auto !important;
     margin-right: auto !important;
 }
@@ -111,10 +112,11 @@ div.backlink {
     padding-right: 5px;
 }
 
-#qrForm > div:nth-child(4) {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    clear: both;
+#qrForm>div:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    padding-top: 4px !important;
+    clear: both !important;
 }
 
 .extButton {
@@ -123,28 +125,36 @@ div.backlink {
     filter: contrast(1.5) brightness(.85) saturate(0.7);
 }
 
+
+#quickReply {
+    display: block;
+    position: fixed;
+    font-size: 10pt;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 input[type=text],
 input[type=password],
 table.postForm>tbody textarea,
+#quickReply #recaptcha_response_field,
 #recaptcha_response_field,
 #quickReply textarea {
-    font-family: arial,helvetica,sans-serif;
+    font-family: arial, helvetica, sans-serif;
+    color: inherit;
     font-size: 10pt;
     min-width: 300px;
+    border: 1px solid #282a2e ;
+    background-color: #0000004d ;
+    border-radius: 4px ;
     margin: 2px;
-    border: none;
-    background-color: #0000004d;
-    border-radius: 4px;
-    padding: 4px;
+    padding: 3px;
 }
 
-#quickReply input[type="text"],
-#quickReply textarea,
-#quickReply #recaptcha_response_field {
-    font-family: arial,helvetica,sans-serif;
-    font-size: 10pt;
-    outline: medium none;
-    width: 300px;
+#qrForm>div:nth-child(4) input[type=text]:focus,
+input[type=password]:focus,
+input:not([type]):focus,
+textarea:focus {
+    background-color: #282a2e;
 }
 
 div.boardBanner,
@@ -152,24 +162,16 @@ div.boardBanner,
     color: inherit;
 }
 
-#quickReply textarea {
-    color: #c5c8c6;
-    min-width: 300px;
-    float: none;
-    border: 1px;
-}
-
-input[type=text]:focus,
-input[type=password]:focus,
-input:not([type]):focus,
-textarea:focus {
-    border: 1px solid #77cc92 !important;
-}
-
 #qrFile {
     width: 230px;
-    margin-right: 5px;
     color: #ffffff;
+}
+
+#qrForm>select {
+    border: 1px solid #575a60;
+    background-color: #282a2e;
+    color: #aaa;
+    margin-bottom: 10px;
 }
 
 div.reply,
@@ -338,12 +340,7 @@ table.postForm>tbody>tr>td:first-child {
     width: 300px;
 }
 
-#quickReply {
-    display: block;
-    position: fixed;
-    font-size: 10pt;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
 
 .postblock {
     background-color: #282a2e;
