@@ -11,10 +11,17 @@ body {
 }
 
 form#delform {
-    max-width: 180vmin !important;
     /* change to your liking */
+    max-width: 120vmin !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+div.pagelist {
+    border: none;
+    background: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 a,
