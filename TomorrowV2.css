@@ -188,7 +188,7 @@ input[type=file]::file-selector-button {
     border-color: #c5c8c6;
     background: #282a2e;
     color: #c5c8c6;
-    height: 22px;
+    height: 23px;
 }
 select.flagSelector {
     border-radius: 4px;
