@@ -12,7 +12,7 @@ body {
 
 form#delform {
     /* change to your liking */
-    max-width: 120vmin !important;
+    max-width: 130vmin !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
