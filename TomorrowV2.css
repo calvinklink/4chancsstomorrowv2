@@ -151,11 +151,10 @@ table.postForm>tbody textarea,
     color: inherit;
     font-size: 10pt;
     min-width: 300px;
-    border: 1px solid #282a2e !important;
+    border: 2px solid #282a2e !important;
     background-color: #0000004d ;
     border-radius: 4px ;
-    margin: 1px;
-    padding: 3px;
+    margin: 0px;
 }
 
 #qrForm>div:nth-child(4) input[type=text]:focus,
@@ -189,7 +188,7 @@ input[type=file]::file-selector-button {
     border-color: #c5c8c6;
     background: #282a2e;
     color: #c5c8c6;
-    height: 2em;
+    height: 22px;
 }
 select.flagSelector {
     border-radius: 4px;
